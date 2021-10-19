@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.DemoWebShop.tests.TC_SHOPPINGCART_014">
+        <methods>
+          <include name="testcase14"/>
+          <include name="closeApplication"/>
+          <include name="initilizeDriver"/>
+          <include name="publishExtentReport"/>
+          <include name="initlizeExtentReportsObject"/>
+          <include name="startTest"/>
+          <include name="logResults"/>
+        </methods>
+      </class> <!-- com.DemoWebShop.tests.TC_SHOPPINGCART_014 -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

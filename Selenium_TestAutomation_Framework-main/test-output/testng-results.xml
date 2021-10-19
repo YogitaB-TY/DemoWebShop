@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="12350" started-at="2021-10-19T04:42:50Z" finished-at="2021-10-19T04:43:02Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="12350" started-at="2021-10-19T04:42:50Z" finished-at="2021-10-19T04:43:02Z">
+      <class name="com.DemoWebShop.tests.TC_SHOPPINGCART_014">
+        <test-method status="PASS" signature="initlizeExtentReportsObject()[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_014@c038203]" name="initlizeExtentReportsObject" is-config="true" duration-ms="261" started-at="2021-10-19T10:12:50Z" finished-at="2021-10-19T10:12:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initlizeExtentReportsObject -->
+        <test-method status="PASS" signature="initilizeDriver()[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_014@c038203]" name="initilizeDriver" is-config="true" duration-ms="2593" started-at="2021-10-19T10:12:50Z" finished-at="2021-10-19T10:12:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeDriver -->
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_014@c038203]" name="startTest" is-config="true" duration-ms="3391" started-at="2021-10-19T10:12:52Z" finished-at="2021-10-19T10:12:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_SHOPPINGCART_014.testcase14() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="testcase14()[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_014@c038203]" name="testcase14" duration-ms="5610" started-at="2021-10-19T10:12:56Z" finished-at="2021-10-19T10:13:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase14 -->
+        <test-method status="PASS" signature="logResults(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_014@c038203]" name="logResults" is-config="true" duration-ms="3" started-at="2021-10-19T10:13:01Z" finished-at="2021-10-19T10:13:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase14 status=SUCCESS method=TC_SHOPPINGCART_014.testcase14()[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_014@c038203] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_SHOPPINGCART_014.testcase14() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logResults -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_014@c038203]" name="closeApplication" is-config="true" duration-ms="736" started-at="2021-10-19T10:13:01Z" finished-at="2021-10-19T10:13:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method status="PASS" signature="publishExtentReport()[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_014@c038203]" name="publishExtentReport" is-config="true" duration-ms="395" started-at="2021-10-19T10:13:02Z" finished-at="2021-10-19T10:13:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- publishExtentReport -->
+      </class> <!-- com.DemoWebShop.tests.TC_SHOPPINGCART_014 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
