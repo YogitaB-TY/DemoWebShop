@@ -1,32 +1,44 @@
 package com.DemoWebShop.tests;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.DemoWebShop.pages.DemoWebShopBooksPage;
-import com.DemoWebShop.pages.DemoWebShopCartPage;
-import com.DemoWebShop.pages.DemoWebShopWelcomePage;
+import com.DemoWebShop.pages.HomePage;
+import com.DemoWebShop.pages.LoginPage;
+import com.DemoWebShop.pages.UserAccountPage;
 import com.selenium.framework.BaseTest;
+import com.selenium.framework.ExcelLib;
 
-public class TC_SHOPPINGCART_014 extends BaseTest{
+import jxl.read.biff.BiffException;
+
+public class TC_SHOPPINGCART_014 extends BaseTest {
 	
-	@Test
-	public void testcase14() throws InterruptedException {
-		DemoWebShopWelcomePage wPage=new DemoWebShopWelcomePage(driver);
-		wPage.Click_BookLink();
-		
-		DemoWebShopBooksPage book=new DemoWebShopBooksPage(driver);
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	    book.Click_AddTo_Cart();
-		book.Click_Fiction_AddTo_Cart();
-		book.Click_Health_AddTo_Cart();
-		book.Click_Cart();
-		
-		DemoWebShopCartPage cart=new DemoWebShopCartPage(driver);
-		cart.comparingProducts();
-		
+	@DataProvider(name="TestData")
+	public Object[][] data() throws BiffException, IOException{
+		ExcelLib lib=new ExcelLib("Demowebshop", this.getClass().getSimpleName());
+		return lib.getTestdata();
 	}
-	
-
+	@Test(dataProvider="TestData")
+	public void TC014(String email,String pwd) throws InterruptedException {
+		HomePage hp=new HomePage(driver);
+		hp.click_Login();
+		
+		 	
+		LoginPage lp=new LoginPage(driver);
+		lp.enter_text_loginemail(email);
+		lp.enter_text_loginPwd(pwd);
+		driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
+		lp.click_login();
+		
+		UserAccountPage ua=new UserAccountPage(driver);
+		ua.click_books();
+		ua.click_AddToCart();
+		ua.click_book2();
+		ua.click_book3();
+		ua.click_shoppingcart();
+		Thread.sleep(5000);
+	}
 }

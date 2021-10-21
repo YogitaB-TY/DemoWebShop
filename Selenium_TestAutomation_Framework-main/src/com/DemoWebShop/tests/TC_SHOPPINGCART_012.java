@@ -1,20 +1,40 @@
 package com.DemoWebShop.tests;
 
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.DemoWebShop.pages.DemoWebShopWelcomePage;
-import com.DemoWebShop.pages.DemoWebShopWishlistPage;
+import com.DemoWebShop.pages.HomePage;
+import com.DemoWebShop.pages.LoginPage;
+import com.DemoWebShop.pages.UserAccountPage;
 import com.selenium.framework.BaseTest;
+import com.selenium.framework.ExcelLib;
 
-public class TC_SHOPPINGCART_012 extends BaseTest{
+import jxl.read.biff.BiffException;
+
+public class TC_SHOPPINGCART_012 extends BaseTest {
 	
-	@Test
-	public void testcase12(){
-		DemoWebShopWelcomePage Wpage=new DemoWebShopWelcomePage(driver);
-		Wpage.Click_Wishlist();
+	@DataProvider(name="TestData")
+	public Object[][] data() throws BiffException, IOException{
+		ExcelLib lib=new ExcelLib("Demowebshop", this.getClass().getSimpleName());
+		return lib.getTestdata();
+	}
+	@Test(dataProvider="TestData")
+	public void TC012(String email,String pwd) throws InterruptedException {
+		HomePage hp=new HomePage(driver);
+		hp.click_Login();
 		
-		DemoWebShopWishlistPage Wishlist=new DemoWebShopWishlistPage(driver);
-		Wishlist.title();
+		 	
+		LoginPage lp=new LoginPage(driver);
+		lp.enter_text_loginemail(email);
+		lp.enter_text_loginPwd(pwd);
+		driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
+		lp.click_login();
+		
+		UserAccountPage ua=new UserAccountPage(driver);
+		ua.click_wishlist();
 	}
 
 }

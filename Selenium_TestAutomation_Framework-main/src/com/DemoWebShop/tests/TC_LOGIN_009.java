@@ -1,40 +1,44 @@
 package com.DemoWebShop.tests;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.DemoWebShop.pages.DemoWebShopHomePage;
-import com.DemoWebShop.pages.DemoWebShopLoginPage;
-import com.DemoWebShop.pages.DemoWebShopWelcomePage;
+import com.DemoWebShop.pages.HomePage;
+import com.DemoWebShop.pages.LoginPage;
 import com.selenium.framework.BaseTest;
 import com.selenium.framework.ExcelLib;
 
 import jxl.read.biff.BiffException;
 
-public class TC_LOGIN_009  extends BaseTest {
+public class TC_LOGIN_009 extends BaseTest {
 	
-	
-	@DataProvider(name="testData")
+	@DataProvider(name="TestData")
 	public Object[][] data() throws BiffException, IOException{
-		ExcelLib lib=new ExcelLib("TestData", this.getClass().getSimpleName());
+		ExcelLib lib=new ExcelLib("Demowebshop", this.getClass().getSimpleName());
 		return lib.getTestdata();
-		
 	}
 	
-	@Test(dataProvider="testData")
-	public void testCase9(String email, String pwd){
-		DemoWebShopWelcomePage Wel_page=new  DemoWebShopWelcomePage(driver);
-		Wel_page.Click_Login();
+	@Test(dataProvider="TestData")
+	public void TC09(String email,String pwd) throws InterruptedException {
+		HomePage hp=new HomePage(driver);
+		hp.click_Login();
 		
-		DemoWebShopLoginPage loginPage=new DemoWebShopLoginPage(driver);
-		loginPage.Enter_Login_email(email);
-		loginPage.Enter_Password(pwd);
-		loginPage.clickLogin_Button();
-		
-		DemoWebShopHomePage Home=new DemoWebShopHomePage(driver);
-		Home.Validate_Login();
-	}
+		 	
+		LoginPage lp=new LoginPage(driver);
+		lp.enter_text_loginemail(email);
+		lp.enter_text_loginPwd(pwd);
+		driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
+		lp.click_login();
+		lp.validate_errorMessage();
+		Thread.sleep(2000);
+			
+					
+		}
 
 }
+
+
+

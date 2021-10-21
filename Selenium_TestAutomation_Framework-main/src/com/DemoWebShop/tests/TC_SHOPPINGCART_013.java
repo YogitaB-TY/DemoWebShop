@@ -1,33 +1,42 @@
 package com.DemoWebShop.tests;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.DemoWebShop.pages.DemoWebShopSearchResultPage;
-import com.DemoWebShop.pages.DemoWebShopWelcomePage;
+import com.DemoWebShop.pages.HomePage;
+import com.DemoWebShop.pages.LoginPage;
+import com.DemoWebShop.pages.UserAccountPage;
 import com.selenium.framework.BaseTest;
 import com.selenium.framework.ExcelLib;
 
 import jxl.read.biff.BiffException;
 
-public class TC_SHOPPINGCART_013 extends BaseTest{
+public class TC_SHOPPINGCART_013 extends BaseTest {
 	
-	@DataProvider(name="testData")
+	
+	@DataProvider(name="TestData")
 	public Object[][] data() throws BiffException, IOException{
-		ExcelLib lib=new ExcelLib("TestData", this.getClass().getSimpleName());
+		ExcelLib lib=new ExcelLib("Demowebshop", this.getClass().getSimpleName());
 		return lib.getTestdata();
 	}
-	
-	@Test(dataProvider="testData")
-	public void testCase13(String SearchValue){
-		DemoWebShopWelcomePage Wpage=new DemoWebShopWelcomePage(driver);
-		Wpage.EnterSearch(SearchValue);
-		Wpage.ClickSeaarchButton();
+	@Test(dataProvider="TestData")
+	public void TC013(String email,String pwd,String search) throws InterruptedException {
+		HomePage hp=new HomePage(driver);
+		hp.click_Login();
 		
-		DemoWebShopSearchResultPage searchP=new DemoWebShopSearchResultPage(driver);
-		searchP.CompareTitle(SearchValue);
+		 	
+		LoginPage lp=new LoginPage(driver);
+		lp.enter_text_loginemail(email);
+		lp.enter_text_loginPwd(pwd);
+		driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
+		lp.click_login();
+		
+		UserAccountPage ua=new UserAccountPage(driver);
+		ua.enter_search_text(search);
+		ua.clickSearch();
 	}
 
 }

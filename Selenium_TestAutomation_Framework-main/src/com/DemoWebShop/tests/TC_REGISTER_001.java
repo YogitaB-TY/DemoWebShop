@@ -1,26 +1,31 @@
 package com.DemoWebShop.tests;
 
+import java.io.IOException;
 
-
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.DemoWebShop.pages.DemoWebShopRegisterPage;
-import com.DemoWebShop.pages.DemoWebShopWelcomePage;
+import com.DemoWebShop.pages.HomePage;
 import com.selenium.framework.BaseTest;
+import com.selenium.framework.ExcelLib;
+
+import jxl.read.biff.BiffException;
 
 public class TC_REGISTER_001 extends BaseTest{
 	
-	@Test
-	public void testcase1(){
-		DemoWebShopWelcomePage WPage=new DemoWebShopWelcomePage(driver);
-		WPage.Validate_Register();
-		WPage.Click_Register();
-		
-		DemoWebShopRegisterPage Reg_Page=new DemoWebShopRegisterPage(driver);
-		Reg_Page.Validate_Register_Text();
-		
+	@DataProvider()
+	public Object[][] data() throws BiffException, IOException{
+		ExcelLib lib=new ExcelLib("Reservation", this.getClass().getSimpleName());
+		return lib.getTestdata();
 		
 	}
 	
+	@Test
+	public void TC01() {
+		HomePage register=new HomePage(driver);
+		register.click_Register();
+		register.Validate();		
+		
+	}
 
 }

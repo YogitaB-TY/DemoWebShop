@@ -7,31 +7,25 @@ import org.testng.annotations.Test;
 
 import com.DemoWebShop.pages.GoogleSearchPage;
 import com.selenium.framework.BaseTest;
-//import com.selenium.framework.ExcelLib;
-import com.selenium.framework.TestDataProv;
+import com.selenium.framework.ExcelLib;
 
-//import jxl.read.biff.BiffException;
+import jxl.read.biff.BiffException;
 
 public class GoogleSearchTC extends BaseTest {
 	
+
+    @DataProvider(name="TestData")
+    public Object[][] data() throws BiffException, IOException{
+	ExcelLib lib=new ExcelLib("search", this.getClass().getSimpleName());
+	return lib.getTestdata();
+    }
 	
 	
-	@Test(dataProvider="data")
-	public void TC01(String Search_Value){
-		
+	@Test(dataProvider="TestData")
+	public void TC01(String search_value){
 		GoogleSearchPage page=new GoogleSearchPage(driver);
-		page.enter_value_to_search(Search_Value);
-		page.click_Search();
-	}
-	
-	@DataProvider(name="data")
-	public Object[][] data() throws  IOException {
-		
-		/*ExcelLib lib=new ExcelLib("Search", this.getClass().getSimpleName());
-		return lib.getTestdata();*/
-		
-		Object[][] data= TestDataProv.testData("Search");
-		return data;
+		page.Enter_search_text(search_value);
+		page.click_Search_Button();
 	}
 
 }

@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test">
+  <test name="Test">
     <classes>
-      <class name="com.Search.tests.GoogleSearchTC"/>
+      <class name="com.DemoWebShop.tests.TC_SHOPPINGCART_013"/>
+      <class name="com.DemoWebShop.tests.TC_SHOPPINGCART_014"/>
+      <class name="com.DemoWebShop.tests.TC_SHOPPINGCART_011"/>
+      <class name="com.DemoWebShop.tests.TC_SHOPPINGCART_012"/>
+      <class name="com.DemoWebShop.tests.TC_SHOPPINGCART_010"/>
+      <class name="com.DemoWebShop.tests.TC_REGISTER_003"/>
+      <class name="com.DemoWebShop.tests.TC_REGISTER_004"/>
+      <class name="com.DemoWebShop.tests.TC_REGISTER_001"/>
+      <class name="com.DemoWebShop.tests.TC_LOGIN_009"/>
+      <class name="com.DemoWebShop.tests.TC_REGISTER_002"/>
+      <class name="com.DemoWebShop.tests.TC_LOGIN_007"/>
+      <class name="com.DemoWebShop.tests.TC_LOGIN_008"/>
+      <class name="com.DemoWebShop.tests.TC_LOGIN_005"/>
+      <class name="com.DemoWebShop.tests.TC_LOGIN_006"/>
+      <class name="com.DemoWebShop.tests.GoogleSearch"/>
+      <class name="com.DemoWebShop.tests.GoogleSearchTC"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

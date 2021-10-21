@@ -1,21 +1,2326 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="2" failed="15" total="31" passed="14">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12350" started-at="2021-10-19T04:42:50Z" finished-at="2021-10-19T04:43:02Z">
+  <suite name="Suite" duration-ms="177090" started-at="2021-10-19T12:23:51Z" finished-at="2021-10-19T12:26:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12350" started-at="2021-10-19T04:42:50Z" finished-at="2021-10-19T04:43:02Z">
-      <class name="com.DemoWebShop.tests.TC_SHOPPINGCART_014">
-        <test-method status="PASS" signature="initlizeExtentReportsObject()[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_014@c038203]" name="initlizeExtentReportsObject" is-config="true" duration-ms="261" started-at="2021-10-19T10:12:50Z" finished-at="2021-10-19T10:12:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initlizeExtentReportsObject -->
-        <test-method status="PASS" signature="initilizeDriver()[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_014@c038203]" name="initilizeDriver" is-config="true" duration-ms="2593" started-at="2021-10-19T10:12:50Z" finished-at="2021-10-19T10:12:52Z">
+    <test name="Test" duration-ms="177090" started-at="2021-10-19T12:23:51Z" finished-at="2021-10-19T12:26:48Z">
+      <class name="com.DemoWebShop.tests.GoogleSearch">
+        <test-method status="PASS" signature="initilizeDriver()[pri:0, instance:com.DemoWebShop.tests.GoogleSearch@50cbc42f]" name="initilizeDriver" is-config="true" duration-ms="1556" started-at="2021-10-19T17:56:44Z" finished-at="2021-10-19T17:56:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilizeDriver -->
-        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_014@c038203]" name="startTest" is-config="true" duration-ms="3391" started-at="2021-10-19T10:12:52Z" finished-at="2021-10-19T10:12:56Z">
+        <test-method status="SKIP" signature="TC01(java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.tests.GoogleSearch@50cbc42f]" name="TC01" duration-ms="0" started-at="2021-10-19T17:56:45Z" data-provider="data" finished-at="2021-10-19T17:56:45Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1274)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:989)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1079)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+Caused by: java.lang.NullPointerException
+	at com.selenium.framework.ExcelLib.getRowCount(ExcelLib.java:128)
+	at com.selenium.framework.ExcelLib.<init>(ExcelLib.java:24)
+	at com.DemoWebShop.tests.GoogleSearch.data(GoogleSearch.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 19 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01 -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.DemoWebShop.tests.GoogleSearch@50cbc42f]" name="closeApplication" is-config="true" duration-ms="703" started-at="2021-10-19T17:56:45Z" finished-at="2021-10-19T17:56:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.DemoWebShop.tests.GoogleSearch -->
+      <class name="com.DemoWebShop.tests.TC_LOGIN_007">
+        <test-method status="PASS" signature="initilizeDriver()[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_007@71e7a66b]" name="initilizeDriver" is-config="true" duration-ms="1490" started-at="2021-10-19T17:55:49Z" finished-at="2021-10-19T17:55:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeDriver -->
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_007@71e7a66b]" name="startTest" is-config="true" duration-ms="4247" started-at="2021-10-19T17:55:50Z" finished-at="2021-10-19T17:55:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_LOGIN_007.testCase7(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="testCase7(java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_007@71e7a66b]" name="testCase7" duration-ms="3373" started-at="2021-10-19T17:55:55Z" data-provider="testData" finished-at="2021-10-19T17:55:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[lorelaig_coffee@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[lukelorelai]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase7 -->
+        <test-method status="PASS" signature="logResults(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_007@71e7a66b]" name="logResults" is-config="true" duration-ms="2" started-at="2021-10-19T17:55:58Z" finished-at="2021-10-19T17:55:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCase7 status=SUCCESS method=TC_LOGIN_007.testCase7(java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_007@71e7a66b] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_LOGIN_007.testCase7(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logResults -->
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_007@71e7a66b]" name="startTest" is-config="true" duration-ms="570" started-at="2021-10-19T17:55:58Z" finished-at="2021-10-19T17:55:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_LOGIN_007.testCase7(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="testCase7(java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_007@71e7a66b]" name="testCase7" duration-ms="3181" started-at="2021-10-19T17:55:59Z" data-provider="testData" finished-at="2021-10-19T17:56:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[emilyisTheMeanest@hartford.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[EmilyRichard]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase7 -->
+        <test-method status="PASS" signature="logResults(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_007@71e7a66b]" name="logResults" is-config="true" duration-ms="1" started-at="2021-10-19T17:56:02Z" finished-at="2021-10-19T17:56:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCase7 status=SUCCESS method=TC_LOGIN_007.testCase7(java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_007@71e7a66b] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_LOGIN_007.testCase7(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logResults -->
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_007@71e7a66b]" name="startTest" is-config="true" duration-ms="589" started-at="2021-10-19T17:56:02Z" finished-at="2021-10-19T17:56:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_LOGIN_007.testCase7(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="testCase7(java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_007@71e7a66b]" name="testCase7" duration-ms="3419" started-at="2021-10-19T17:56:02Z" data-provider="testData" finished-at="2021-10-19T17:56:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[amazing.detective_genius@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dieHardFan]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase7 -->
+        <test-method status="PASS" signature="logResults(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_007@71e7a66b]" name="logResults" is-config="true" duration-ms="1" started-at="2021-10-19T17:56:06Z" finished-at="2021-10-19T17:56:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCase7 status=SUCCESS method=TC_LOGIN_007.testCase7(java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_007@71e7a66b] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_LOGIN_007.testCase7(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logResults -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_007@71e7a66b]" name="closeApplication" is-config="true" duration-ms="719" started-at="2021-10-19T17:56:06Z" finished-at="2021-10-19T17:56:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.DemoWebShop.tests.TC_LOGIN_007 -->
+      <class name="com.DemoWebShop.tests.TC_LOGIN_008">
+        <test-method status="PASS" signature="initilizeDriver()[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_008@2ac1fdc4]" name="initilizeDriver" is-config="true" duration-ms="1544" started-at="2021-10-19T17:56:06Z" finished-at="2021-10-19T17:56:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeDriver -->
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_008@2ac1fdc4]" name="startTest" is-config="true" duration-ms="2956" started-at="2021-10-19T17:56:08Z" finished-at="2021-10-19T17:56:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_LOGIN_008.testCase8(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="FAIL" signature="testCase8(java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_008@2ac1fdc4]" name="testCase8" duration-ms="1821" started-at="2021-10-19T17:56:11Z" data-provider="testData" finished-at="2021-10-19T17:56:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[lorelaig_coffee@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ico-logout']"}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:12:12.411Z'
+System info: host: 'DESKTOP-C6FREFO', ip: '192.168.207.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\YOGITA\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65316}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 41dbd7146feac7f8038583ede9d55778
+*** Element info: {Using=xpath, value=//a[@class='ico-logout']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ico-logout']"}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:12:12.411Z'
+System info: host: 'DESKTOP-C6FREFO', ip: '192.168.207.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\YOGITA\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65316}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 41dbd7146feac7f8038583ede9d55778
+*** Element info: {Using=xpath, value=//a[@class='ico-logout']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at com.DemoWebShop.pages.DemoWebShopHomePage.Validate_Login(DemoWebShopHomePage.java:29)
+	at com.DemoWebShop.tests.TC_LOGIN_008.testCase8(TC_LOGIN_008.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase8 -->
+        <test-method status="PASS" signature="logResults(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_008@2ac1fdc4]" name="logResults" is-config="true" duration-ms="144" started-at="2021-10-19T17:56:13Z" finished-at="2021-10-19T17:56:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCase8 status=FAILURE method=TC_LOGIN_008.testCase8(java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_008@2ac1fdc4] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_LOGIN_008.testCase8(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logResults -->
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_008@2ac1fdc4]" name="startTest" is-config="true" duration-ms="621" started-at="2021-10-19T17:56:13Z" finished-at="2021-10-19T17:56:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_LOGIN_008.testCase8(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="FAIL" signature="testCase8(java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_008@2ac1fdc4]" name="testCase8" duration-ms="1621" started-at="2021-10-19T17:56:14Z" data-provider="testData" finished-at="2021-10-19T17:56:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[emilyisTheMeanest@hartford.com]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ico-logout']"}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:12:12.411Z'
+System info: host: 'DESKTOP-C6FREFO', ip: '192.168.207.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\YOGITA\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65316}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 41dbd7146feac7f8038583ede9d55778
+*** Element info: {Using=xpath, value=//a[@class='ico-logout']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ico-logout']"}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:12:12.411Z'
+System info: host: 'DESKTOP-C6FREFO', ip: '192.168.207.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\YOGITA\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65316}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 41dbd7146feac7f8038583ede9d55778
+*** Element info: {Using=xpath, value=//a[@class='ico-logout']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at com.DemoWebShop.pages.DemoWebShopHomePage.Validate_Login(DemoWebShopHomePage.java:29)
+	at com.DemoWebShop.tests.TC_LOGIN_008.testCase8(TC_LOGIN_008.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase8 -->
+        <test-method status="PASS" signature="logResults(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_008@2ac1fdc4]" name="logResults" is-config="true" duration-ms="133" started-at="2021-10-19T17:56:15Z" finished-at="2021-10-19T17:56:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCase8 status=FAILURE method=TC_LOGIN_008.testCase8(java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_008@2ac1fdc4] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_LOGIN_008.testCase8(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logResults -->
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_008@2ac1fdc4]" name="startTest" is-config="true" duration-ms="622" started-at="2021-10-19T17:56:15Z" finished-at="2021-10-19T17:56:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_LOGIN_008.testCase8(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="FAIL" signature="testCase8(java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_008@2ac1fdc4]" name="testCase8" duration-ms="1782" started-at="2021-10-19T17:56:16Z" data-provider="testData" finished-at="2021-10-19T17:56:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[amazing.detective_genius@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ico-logout']"}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:12:12.411Z'
+System info: host: 'DESKTOP-C6FREFO', ip: '192.168.207.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\YOGITA\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65316}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 41dbd7146feac7f8038583ede9d55778
+*** Element info: {Using=xpath, value=//a[@class='ico-logout']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ico-logout']"}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:12:12.411Z'
+System info: host: 'DESKTOP-C6FREFO', ip: '192.168.207.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\YOGITA\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65316}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 41dbd7146feac7f8038583ede9d55778
+*** Element info: {Using=xpath, value=//a[@class='ico-logout']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at com.DemoWebShop.pages.DemoWebShopHomePage.Validate_Login(DemoWebShopHomePage.java:29)
+	at com.DemoWebShop.tests.TC_LOGIN_008.testCase8(TC_LOGIN_008.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase8 -->
+        <test-method status="PASS" signature="logResults(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_008@2ac1fdc4]" name="logResults" is-config="true" duration-ms="150" started-at="2021-10-19T17:56:18Z" finished-at="2021-10-19T17:56:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCase8 status=FAILURE method=TC_LOGIN_008.testCase8(java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_008@2ac1fdc4] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_LOGIN_008.testCase8(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logResults -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_008@2ac1fdc4]" name="closeApplication" is-config="true" duration-ms="683" started-at="2021-10-19T17:56:18Z" finished-at="2021-10-19T17:56:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.DemoWebShop.tests.TC_LOGIN_008 -->
+      <class name="com.DemoWebShop.tests.GoogleSearchTC">
+        <test-method status="PASS" signature="initilizeDriver()[pri:0, instance:com.DemoWebShop.tests.GoogleSearchTC@75412c2f]" name="initilizeDriver" is-config="true" duration-ms="1542" started-at="2021-10-19T17:56:46Z" finished-at="2021-10-19T17:56:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeDriver -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.DemoWebShop.tests.GoogleSearchTC@75412c2f]" name="closeApplication" is-config="true" duration-ms="672" started-at="2021-10-19T17:56:47Z" finished-at="2021-10-19T17:56:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method status="SKIP" signature="TC01(java.lang.String)[pri:0, instance:com.DemoWebShop.tests.GoogleSearchTC@75412c2f]" name="TC01" duration-ms="0" started-at="2021-10-19T17:56:47Z" data-provider="data" finished-at="2021-10-19T17:56:47Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/Workbook]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/Workbook
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1274)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:989)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1079)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+Caused by: java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/Workbook
+	at com.DemoWebShop.tests.GoogleSearchTC.data(GoogleSearchTC.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: org.apache.poi.ss.usermodel.Workbook
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 26 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01 -->
+      </class> <!-- com.DemoWebShop.tests.GoogleSearchTC -->
+      <class name="com.DemoWebShop.tests.TC_LOGIN_005">
+        <test-method status="PASS" signature="initilizeDriver()[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_005@5f150435]" name="initilizeDriver" is-config="true" duration-ms="1585" started-at="2021-10-19T17:56:19Z" finished-at="2021-10-19T17:56:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeDriver -->
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_005@5f150435]" name="startTest" is-config="true" duration-ms="2923" started-at="2021-10-19T17:56:20Z" finished-at="2021-10-19T17:56:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_LOGIN_005.testcase5(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="FAIL" signature="testcase5(java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_005@5f150435]" name="testcase5" duration-ms="2057" started-at="2021-10-19T17:56:23Z" data-provider="testData" finished-at="2021-10-19T17:56:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[lorelaig_coffee@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[lukelorel]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ico-logout']"}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:12:12.411Z'
+System info: host: 'DESKTOP-C6FREFO', ip: '192.168.207.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\YOGITA\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52588}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a31d7324ec080c63918ca54e0a3bdd77
+*** Element info: {Using=xpath, value=//a[@class='ico-logout']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ico-logout']"}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:12:12.411Z'
+System info: host: 'DESKTOP-C6FREFO', ip: '192.168.207.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\YOGITA\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52588}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a31d7324ec080c63918ca54e0a3bdd77
+*** Element info: {Using=xpath, value=//a[@class='ico-logout']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at com.DemoWebShop.pages.DemoWebShopHomePage.Validate_Login(DemoWebShopHomePage.java:29)
+	at com.DemoWebShop.tests.TC_LOGIN_005.testcase5(TC_LOGIN_005.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase5 -->
+        <test-method status="PASS" signature="logResults(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_005@5f150435]" name="logResults" is-config="true" duration-ms="149" started-at="2021-10-19T17:56:25Z" finished-at="2021-10-19T17:56:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase5 status=FAILURE method=TC_LOGIN_005.testcase5(java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_005@5f150435] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_LOGIN_005.testcase5(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logResults -->
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_005@5f150435]" name="startTest" is-config="true" duration-ms="597" started-at="2021-10-19T17:56:25Z" finished-at="2021-10-19T17:56:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_LOGIN_005.testcase5(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="FAIL" signature="testcase5(java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_005@5f150435]" name="testcase5" duration-ms="1793" started-at="2021-10-19T17:56:26Z" data-provider="testData" finished-at="2021-10-19T17:56:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[emilyisTheMeanest@hartford.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hartfo]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ico-logout']"}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:12:12.411Z'
+System info: host: 'DESKTOP-C6FREFO', ip: '192.168.207.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\YOGITA\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52588}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a31d7324ec080c63918ca54e0a3bdd77
+*** Element info: {Using=xpath, value=//a[@class='ico-logout']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ico-logout']"}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:12:12.411Z'
+System info: host: 'DESKTOP-C6FREFO', ip: '192.168.207.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\YOGITA\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52588}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a31d7324ec080c63918ca54e0a3bdd77
+*** Element info: {Using=xpath, value=//a[@class='ico-logout']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at com.DemoWebShop.pages.DemoWebShopHomePage.Validate_Login(DemoWebShopHomePage.java:29)
+	at com.DemoWebShop.tests.TC_LOGIN_005.testcase5(TC_LOGIN_005.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase5 -->
+        <test-method status="PASS" signature="logResults(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_005@5f150435]" name="logResults" is-config="true" duration-ms="126" started-at="2021-10-19T17:56:28Z" finished-at="2021-10-19T17:56:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase5 status=FAILURE method=TC_LOGIN_005.testcase5(java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_005@5f150435] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_LOGIN_005.testcase5(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logResults -->
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_005@5f150435]" name="startTest" is-config="true" duration-ms="739" started-at="2021-10-19T17:56:28Z" finished-at="2021-10-19T17:56:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_LOGIN_005.testcase5(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="FAIL" signature="testcase5(java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_005@5f150435]" name="testcase5" duration-ms="1903" started-at="2021-10-19T17:56:29Z" data-provider="testData" finished-at="2021-10-19T17:56:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[amazing.detective_genius@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[London]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ico-logout']"}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:12:12.411Z'
+System info: host: 'DESKTOP-C6FREFO', ip: '192.168.207.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\YOGITA\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52588}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a31d7324ec080c63918ca54e0a3bdd77
+*** Element info: {Using=xpath, value=//a[@class='ico-logout']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ico-logout']"}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:12:12.411Z'
+System info: host: 'DESKTOP-C6FREFO', ip: '192.168.207.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\YOGITA\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52588}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a31d7324ec080c63918ca54e0a3bdd77
+*** Element info: {Using=xpath, value=//a[@class='ico-logout']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at com.DemoWebShop.pages.DemoWebShopHomePage.Validate_Login(DemoWebShopHomePage.java:29)
+	at com.DemoWebShop.tests.TC_LOGIN_005.testcase5(TC_LOGIN_005.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase5 -->
+        <test-method status="PASS" signature="logResults(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_005@5f150435]" name="logResults" is-config="true" duration-ms="142" started-at="2021-10-19T17:56:31Z" finished-at="2021-10-19T17:56:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase5 status=FAILURE method=TC_LOGIN_005.testcase5(java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_005@5f150435] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_LOGIN_005.testcase5(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logResults -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_005@5f150435]" name="closeApplication" is-config="true" duration-ms="633" started-at="2021-10-19T17:56:31Z" finished-at="2021-10-19T17:56:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.DemoWebShop.tests.TC_LOGIN_005 -->
+      <class name="com.DemoWebShop.tests.TC_LOGIN_006">
+        <test-method status="PASS" signature="initilizeDriver()[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_006@1c53fd30]" name="initilizeDriver" is-config="true" duration-ms="1590" started-at="2021-10-19T17:56:31Z" finished-at="2021-10-19T17:56:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeDriver -->
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_006@1c53fd30]" name="startTest" is-config="true" duration-ms="2599" started-at="2021-10-19T17:56:33Z" finished-at="2021-10-19T17:56:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_LOGIN_006.testCase6(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="FAIL" signature="testCase6(java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_006@1c53fd30]" name="testCase6" duration-ms="1930" started-at="2021-10-19T17:56:36Z" data-provider="testData" finished-at="2021-10-19T17:56:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[lorelaig_cfee@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[lukelorelai]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ico-logout']"}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:12:12.411Z'
+System info: host: 'DESKTOP-C6FREFO', ip: '192.168.207.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\YOGITA\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1ad43b03bfe1da5e86393bca0648d693
+*** Element info: {Using=xpath, value=//a[@class='ico-logout']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ico-logout']"}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:12:12.411Z'
+System info: host: 'DESKTOP-C6FREFO', ip: '192.168.207.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\YOGITA\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1ad43b03bfe1da5e86393bca0648d693
+*** Element info: {Using=xpath, value=//a[@class='ico-logout']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at com.DemoWebShop.pages.DemoWebShopHomePage.Validate_Login(DemoWebShopHomePage.java:29)
+	at com.DemoWebShop.tests.TC_LOGIN_006.testCase6(TC_LOGIN_006.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase6 -->
+        <test-method status="PASS" signature="logResults(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_006@1c53fd30]" name="logResults" is-config="true" duration-ms="152" started-at="2021-10-19T17:56:38Z" finished-at="2021-10-19T17:56:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCase6 status=FAILURE method=TC_LOGIN_006.testCase6(java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_006@1c53fd30] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_LOGIN_006.testCase6(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logResults -->
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_006@1c53fd30]" name="startTest" is-config="true" duration-ms="599" started-at="2021-10-19T17:56:38Z" finished-at="2021-10-19T17:56:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_LOGIN_006.testCase6(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="FAIL" signature="testCase6(java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_006@1c53fd30]" name="testCase6" duration-ms="1870" started-at="2021-10-19T17:56:38Z" data-provider="testData" finished-at="2021-10-19T17:56:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[emilyisTeanest@hartford.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[EmilyRichard]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ico-logout']"}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:12:12.411Z'
+System info: host: 'DESKTOP-C6FREFO', ip: '192.168.207.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\YOGITA\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1ad43b03bfe1da5e86393bca0648d693
+*** Element info: {Using=xpath, value=//a[@class='ico-logout']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ico-logout']"}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:12:12.411Z'
+System info: host: 'DESKTOP-C6FREFO', ip: '192.168.207.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\YOGITA\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1ad43b03bfe1da5e86393bca0648d693
+*** Element info: {Using=xpath, value=//a[@class='ico-logout']}
+	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at com.DemoWebShop.pages.DemoWebShopHomePage.Validate_Login(DemoWebShopHomePage.java:29)
+	at com.DemoWebShop.tests.TC_LOGIN_006.testCase6(TC_LOGIN_006.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase6 -->
+        <test-method status="PASS" signature="logResults(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_006@1c53fd30]" name="logResults" is-config="true" duration-ms="172" started-at="2021-10-19T17:56:40Z" finished-at="2021-10-19T17:56:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCase6 status=FAILURE method=TC_LOGIN_006.testCase6(java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_006@1c53fd30] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_LOGIN_006.testCase6(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logResults -->
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_006@1c53fd30]" name="startTest" is-config="true" duration-ms="613" started-at="2021-10-19T17:56:40Z" finished-at="2021-10-19T17:56:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_LOGIN_006.testCase6(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="FAIL" signature="testCase6(java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_006@1c53fd30]" name="testCase6" duration-ms="1834" started-at="2021-10-19T17:56:41Z" data-provider="testData" finished-at="2021-10-19T17:56:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[amazing.detive_genius@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dieHardFan]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ico-logout']"}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:12:12.411Z'
+System info: host: 'DESKTOP-C6FREFO', ip: '192.168.207.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\YOGITA\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1ad43b03bfe1da5e86393bca0648d693
+*** Element info: {Using=xpath, value=//a[@class='ico-logout']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ico-logout']"}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:12:12.411Z'
+System info: host: 'DESKTOP-C6FREFO', ip: '192.168.207.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\YOGITA\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1ad43b03bfe1da5e86393bca0648d693
+*** Element info: {Using=xpath, value=//a[@class='ico-logout']}
+	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at com.DemoWebShop.pages.DemoWebShopHomePage.Validate_Login(DemoWebShopHomePage.java:29)
+	at com.DemoWebShop.tests.TC_LOGIN_006.testCase6(TC_LOGIN_006.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase6 -->
+        <test-method status="PASS" signature="logResults(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_006@1c53fd30]" name="logResults" is-config="true" duration-ms="143" started-at="2021-10-19T17:56:43Z" finished-at="2021-10-19T17:56:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCase6 status=FAILURE method=TC_LOGIN_006.testCase6(java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_006@1c53fd30] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_LOGIN_006.testCase6(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logResults -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_006@1c53fd30]" name="closeApplication" is-config="true" duration-ms="632" started-at="2021-10-19T17:56:43Z" finished-at="2021-10-19T17:56:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.DemoWebShop.tests.TC_LOGIN_006 -->
+      <class name="com.DemoWebShop.tests.TC_REGISTER_002">
+        <test-method status="PASS" signature="initilizeDriver()[pri:0, instance:com.DemoWebShop.tests.TC_REGISTER_002@c39f790]" name="initilizeDriver" is-config="true" duration-ms="1633" started-at="2021-10-19T17:55:38Z" finished-at="2021-10-19T17:55:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeDriver -->
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_REGISTER_002@c39f790]" name="startTest" is-config="true" duration-ms="2821" started-at="2021-10-19T17:55:39Z" finished-at="2021-10-19T17:55:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_REGISTER_002.testcase2(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="testcase2(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_REGISTER_002@c39f790]" name="testcase2" duration-ms="2830" started-at="2021-10-19T17:55:42Z" data-provider="testData" finished-at="2021-10-19T17:55:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[**#$%%]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Gopal]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Deeksha@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[jvfifv]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[jvfifv]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase2 -->
+        <test-method status="PASS" signature="logResults(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_REGISTER_002@c39f790]" name="logResults" is-config="true" duration-ms="3" started-at="2021-10-19T17:55:45Z" finished-at="2021-10-19T17:55:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase2 status=SUCCESS method=TC_REGISTER_002.testcase2(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_REGISTER_002@c39f790] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_REGISTER_002.testcase2(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logResults -->
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_REGISTER_002@c39f790]" name="startTest" is-config="true" duration-ms="677" started-at="2021-10-19T17:55:45Z" finished-at="2021-10-19T17:55:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_REGISTER_002.testcase2(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="testcase2(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_REGISTER_002@c39f790]" name="testcase2" duration-ms="2605" started-at="2021-10-19T17:55:46Z" data-provider="testData" finished-at="2021-10-19T17:55:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[   %%#@%@%$^]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Vashisht]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sandhya@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[vfhnjvf]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[vfhnjvf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase2 -->
+        <test-method status="PASS" signature="logResults(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_REGISTER_002@c39f790]" name="logResults" is-config="true" duration-ms="1" started-at="2021-10-19T17:55:48Z" finished-at="2021-10-19T17:55:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase2 status=SUCCESS method=TC_REGISTER_002.testcase2(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_REGISTER_002@c39f790] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_REGISTER_002.testcase2(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logResults -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.DemoWebShop.tests.TC_REGISTER_002@c39f790]" name="closeApplication" is-config="true" duration-ms="691" started-at="2021-10-19T17:55:48Z" finished-at="2021-10-19T17:55:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.DemoWebShop.tests.TC_REGISTER_002 -->
+      <class name="com.DemoWebShop.tests.TC_REGISTER_001">
+        <test-method status="PASS" signature="initilizeDriver()[pri:0, instance:com.DemoWebShop.tests.TC_REGISTER_001@387c703b]" name="initilizeDriver" is-config="true" duration-ms="1504" started-at="2021-10-19T17:55:11Z" finished-at="2021-10-19T17:55:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeDriver -->
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_REGISTER_001@387c703b]" name="startTest" is-config="true" duration-ms="4946" started-at="2021-10-19T17:55:13Z" finished-at="2021-10-19T17:55:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_REGISTER_001.testcase1()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="testcase1()[pri:0, instance:com.DemoWebShop.tests.TC_REGISTER_001@387c703b]" name="testcase1" duration-ms="1059" started-at="2021-10-19T17:55:18Z" finished-at="2021-10-19T17:55:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase1 -->
+        <test-method status="PASS" signature="logResults(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_REGISTER_001@387c703b]" name="logResults" is-config="true" duration-ms="1" started-at="2021-10-19T17:55:19Z" finished-at="2021-10-19T17:55:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase1 status=SUCCESS method=TC_REGISTER_001.testcase1()[pri:0, instance:com.DemoWebShop.tests.TC_REGISTER_001@387c703b] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_REGISTER_001.testcase1()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logResults -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.DemoWebShop.tests.TC_REGISTER_001@387c703b]" name="closeApplication" is-config="true" duration-ms="1377" started-at="2021-10-19T17:55:19Z" finished-at="2021-10-19T17:55:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.DemoWebShop.tests.TC_REGISTER_001 -->
+      <class name="com.DemoWebShop.tests.TC_LOGIN_009">
+        <test-method status="PASS" signature="initilizeDriver()[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_009@224aed64]" name="initilizeDriver" is-config="true" duration-ms="1617" started-at="2021-10-19T17:55:20Z" finished-at="2021-10-19T17:55:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeDriver -->
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_009@224aed64]" name="startTest" is-config="true" duration-ms="4817" started-at="2021-10-19T17:55:22Z" finished-at="2021-10-19T17:55:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_LOGIN_009.testCase9(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="FAIL" signature="testCase9(java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_009@224aed64]" name="testCase9" duration-ms="2315" started-at="2021-10-19T17:55:27Z" data-provider="testData" finished-at="2021-10-19T17:55:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[lorelaig_co@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[lukelore]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ico-logout']"}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:12:12.411Z'
+System info: host: 'DESKTOP-C6FREFO', ip: '192.168.207.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\YOGITA\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59466}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fe10712f6694d92c900c4c4aa498927f
+*** Element info: {Using=xpath, value=//a[@class='ico-logout']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ico-logout']"}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:12:12.411Z'
+System info: host: 'DESKTOP-C6FREFO', ip: '192.168.207.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\YOGITA\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59466}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fe10712f6694d92c900c4c4aa498927f
+*** Element info: {Using=xpath, value=//a[@class='ico-logout']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at com.DemoWebShop.pages.DemoWebShopHomePage.Validate_Login(DemoWebShopHomePage.java:29)
+	at com.DemoWebShop.tests.TC_LOGIN_009.testCase9(TC_LOGIN_009.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase9 -->
+        <test-method status="PASS" signature="logResults(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_009@224aed64]" name="logResults" is-config="true" duration-ms="191" started-at="2021-10-19T17:55:29Z" finished-at="2021-10-19T17:55:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCase9 status=FAILURE method=TC_LOGIN_009.testCase9(java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_009@224aed64] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_LOGIN_009.testCase9(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logResults -->
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_009@224aed64]" name="startTest" is-config="true" duration-ms="743" started-at="2021-10-19T17:55:29Z" finished-at="2021-10-19T17:55:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_LOGIN_009.testCase9(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="FAIL" signature="testCase9(java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_009@224aed64]" name="testCase9" duration-ms="3314" started-at="2021-10-19T17:55:30Z" data-provider="testData" finished-at="2021-10-19T17:55:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[emilyisThet@hartford.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[EmilyRicha]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ico-logout']"}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:12:12.411Z'
+System info: host: 'DESKTOP-C6FREFO', ip: '192.168.207.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\YOGITA\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59466}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fe10712f6694d92c900c4c4aa498927f
+*** Element info: {Using=xpath, value=//a[@class='ico-logout']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ico-logout']"}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:12:12.411Z'
+System info: host: 'DESKTOP-C6FREFO', ip: '192.168.207.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\YOGITA\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59466}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fe10712f6694d92c900c4c4aa498927f
+*** Element info: {Using=xpath, value=//a[@class='ico-logout']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at com.DemoWebShop.pages.DemoWebShopHomePage.Validate_Login(DemoWebShopHomePage.java:29)
+	at com.DemoWebShop.tests.TC_LOGIN_009.testCase9(TC_LOGIN_009.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase9 -->
+        <test-method status="PASS" signature="logResults(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_009@224aed64]" name="logResults" is-config="true" duration-ms="157" started-at="2021-10-19T17:55:33Z" finished-at="2021-10-19T17:55:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCase9 status=FAILURE method=TC_LOGIN_009.testCase9(java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_009@224aed64] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_LOGIN_009.testCase9(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logResults -->
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_009@224aed64]" name="startTest" is-config="true" duration-ms="733" started-at="2021-10-19T17:55:33Z" finished-at="2021-10-19T17:55:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_LOGIN_009.testCase9(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="FAIL" signature="testCase9(java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_009@224aed64]" name="testCase9" duration-ms="2592" started-at="2021-10-19T17:55:34Z" data-provider="testData" finished-at="2021-10-19T17:55:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[amazing.detee_genius@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dieHar]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ico-logout']"}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:12:12.411Z'
+System info: host: 'DESKTOP-C6FREFO', ip: '192.168.207.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\YOGITA\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59466}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fe10712f6694d92c900c4c4aa498927f
+*** Element info: {Using=xpath, value=//a[@class='ico-logout']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ico-logout']"}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:12:12.411Z'
+System info: host: 'DESKTOP-C6FREFO', ip: '192.168.207.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\YOGITA\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59466}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fe10712f6694d92c900c4c4aa498927f
+*** Element info: {Using=xpath, value=//a[@class='ico-logout']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at com.DemoWebShop.pages.DemoWebShopHomePage.Validate_Login(DemoWebShopHomePage.java:29)
+	at com.DemoWebShop.tests.TC_LOGIN_009.testCase9(TC_LOGIN_009.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase9 -->
+        <test-method status="PASS" signature="logResults(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_009@224aed64]" name="logResults" is-config="true" duration-ms="137" started-at="2021-10-19T17:55:37Z" finished-at="2021-10-19T17:55:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCase9 status=FAILURE method=TC_LOGIN_009.testCase9(java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_009@224aed64] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_LOGIN_009.testCase9(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logResults -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.DemoWebShop.tests.TC_LOGIN_009@224aed64]" name="closeApplication" is-config="true" duration-ms="729" started-at="2021-10-19T17:55:37Z" finished-at="2021-10-19T17:55:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.DemoWebShop.tests.TC_LOGIN_009 -->
+      <class name="com.DemoWebShop.tests.TC_REGISTER_004">
+        <test-method status="PASS" signature="initilizeDriver()[pri:0, instance:com.DemoWebShop.tests.TC_REGISTER_004@1ff8b8f]" name="initilizeDriver" is-config="true" duration-ms="1536" started-at="2021-10-19T17:55:04Z" finished-at="2021-10-19T17:55:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeDriver -->
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_REGISTER_004@1ff8b8f]" name="startTest" is-config="true" duration-ms="2595" started-at="2021-10-19T17:55:05Z" finished-at="2021-10-19T17:55:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_REGISTER_004.testcase4(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="testcase4(java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_REGISTER_004@1ff8b8f]" name="testcase4" duration-ms="856" started-at="2021-10-19T17:55:08Z" data-provider="testData" finished-at="2021-10-19T17:55:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Female]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase4 -->
+        <test-method status="PASS" signature="logResults(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_REGISTER_004@1ff8b8f]" name="logResults" is-config="true" duration-ms="1" started-at="2021-10-19T17:55:09Z" finished-at="2021-10-19T17:55:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase4 status=SUCCESS method=TC_REGISTER_004.testcase4(java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_REGISTER_004@1ff8b8f] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_REGISTER_004.testcase4(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logResults -->
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_REGISTER_004@1ff8b8f]" name="startTest" is-config="true" duration-ms="643" started-at="2021-10-19T17:55:09Z" finished-at="2021-10-19T17:55:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_REGISTER_004.testcase4(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="testcase4(java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_REGISTER_004@1ff8b8f]" name="testcase4" duration-ms="1036" started-at="2021-10-19T17:55:09Z" data-provider="testData" finished-at="2021-10-19T17:55:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase4 -->
+        <test-method status="PASS" signature="logResults(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_REGISTER_004@1ff8b8f]" name="logResults" is-config="true" duration-ms="1" started-at="2021-10-19T17:55:10Z" finished-at="2021-10-19T17:55:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase4 status=SUCCESS method=TC_REGISTER_004.testcase4(java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_REGISTER_004@1ff8b8f] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_REGISTER_004.testcase4(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logResults -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.DemoWebShop.tests.TC_REGISTER_004@1ff8b8f]" name="closeApplication" is-config="true" duration-ms="749" started-at="2021-10-19T17:55:10Z" finished-at="2021-10-19T17:55:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.DemoWebShop.tests.TC_REGISTER_004 -->
+      <class name="com.DemoWebShop.tests.TC_REGISTER_003">
+        <test-method status="PASS" signature="initilizeDriver()[pri:0, instance:com.DemoWebShop.tests.TC_REGISTER_003@1bc6a36e]" name="initilizeDriver" is-config="true" duration-ms="1537" started-at="2021-10-19T17:54:51Z" finished-at="2021-10-19T17:54:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeDriver -->
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_REGISTER_003@1bc6a36e]" name="startTest" is-config="true" duration-ms="3083" started-at="2021-10-19T17:54:53Z" finished-at="2021-10-19T17:54:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_REGISTER_003.testcase3(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="FAIL" signature="testcase3(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_REGISTER_003@1bc6a36e]" name="testcase3" duration-ms="2934" started-at="2021-10-19T17:54:56Z" data-provider="testData" finished-at="2021-10-19T17:54:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vhbfu33489]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Gopal]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[DeekshaVnfj@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[jvfifv]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[jvfifv]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ico-logout']"}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:12:12.411Z'
+System info: host: 'DESKTOP-C6FREFO', ip: '192.168.207.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\YOGITA\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57464}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 00d3cafb83c5826e45819acbd447a4f6
+*** Element info: {Using=xpath, value=//a[@class='ico-logout']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ico-logout']"}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:12:12.411Z'
+System info: host: 'DESKTOP-C6FREFO', ip: '192.168.207.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\YOGITA\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57464}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 00d3cafb83c5826e45819acbd447a4f6
+*** Element info: {Using=xpath, value=//a[@class='ico-logout']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at com.DemoWebShop.pages.DemoWebShopHomePage.Validate_Login(DemoWebShopHomePage.java:29)
+	at com.DemoWebShop.tests.TC_REGISTER_003.testcase3(TC_REGISTER_003.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase3 -->
+        <test-method status="PASS" signature="logResults(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_REGISTER_003@1bc6a36e]" name="logResults" is-config="true" duration-ms="166" started-at="2021-10-19T17:54:59Z" finished-at="2021-10-19T17:54:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase3 status=FAILURE method=TC_REGISTER_003.testcase3(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_REGISTER_003@1bc6a36e] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_REGISTER_003.testcase3(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logResults -->
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_REGISTER_003@1bc6a36e]" name="startTest" is-config="true" duration-ms="588" started-at="2021-10-19T17:54:59Z" finished-at="2021-10-19T17:55:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_REGISTER_003.testcase3(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="FAIL" signature="testcase3(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_REGISTER_003@1bc6a36e]" name="testcase3" duration-ms="2737" started-at="2021-10-19T17:55:00Z" data-provider="testData" finished-at="2021-10-19T17:55:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[   nsdniwjq12e329884]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Vashisht]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SandhyaSfvfrkj@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[vfhnjvf]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[vfhnjvf]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ico-logout']"}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:12:12.411Z'
+System info: host: 'DESKTOP-C6FREFO', ip: '192.168.207.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\YOGITA\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57464}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 00d3cafb83c5826e45819acbd447a4f6
+*** Element info: {Using=xpath, value=//a[@class='ico-logout']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ico-logout']"}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:12:12.411Z'
+System info: host: 'DESKTOP-C6FREFO', ip: '192.168.207.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\YOGITA\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57464}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 00d3cafb83c5826e45819acbd447a4f6
+*** Element info: {Using=xpath, value=//a[@class='ico-logout']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at com.DemoWebShop.pages.DemoWebShopHomePage.Validate_Login(DemoWebShopHomePage.java:29)
+	at com.DemoWebShop.tests.TC_REGISTER_003.testcase3(TC_REGISTER_003.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase3 -->
+        <test-method status="PASS" signature="logResults(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_REGISTER_003@1bc6a36e]" name="logResults" is-config="true" duration-ms="135" started-at="2021-10-19T17:55:02Z" finished-at="2021-10-19T17:55:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase3 status=FAILURE method=TC_REGISTER_003.testcase3(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_REGISTER_003@1bc6a36e] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_REGISTER_003.testcase3(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logResults -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.DemoWebShop.tests.TC_REGISTER_003@1bc6a36e]" name="closeApplication" is-config="true" duration-ms="1280" started-at="2021-10-19T17:55:02Z" finished-at="2021-10-19T17:55:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.DemoWebShop.tests.TC_REGISTER_003 -->
+      <class name="com.DemoWebShop.tests.TC_SHOPPINGCART_010">
+        <test-method status="PASS" signature="initilizeDriver()[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_010@629f0666]" name="initilizeDriver" is-config="true" duration-ms="1424" started-at="2021-10-19T17:54:43Z" finished-at="2021-10-19T17:54:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeDriver -->
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_010@629f0666]" name="startTest" is-config="true" duration-ms="2763" started-at="2021-10-19T17:54:45Z" finished-at="2021-10-19T17:54:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_SHOPPINGCART_010.testcase10()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="FAIL" signature="testcase10()[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_010@629f0666]" name="testcase10" duration-ms="2604" started-at="2021-10-19T17:54:48Z" finished-at="2021-10-19T17:54:50Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//a[contains(text(),'Fiction')])[2]"}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:12:12.411Z'
+System info: host: 'DESKTOP-C6FREFO', ip: '192.168.207.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\YOGITA\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56682}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1c53d36b8bd993eb6bbff91ef1c400f0
+*** Element info: {Using=xpath, value=(//a[contains(text(),'Fiction')])[2]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//a[contains(text(),'Fiction')])[2]"}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:12:12.411Z'
+System info: host: 'DESKTOP-C6FREFO', ip: '192.168.207.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\YOGITA\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56682}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1c53d36b8bd993eb6bbff91ef1c400f0
+*** Element info: {Using=xpath, value=(//a[contains(text(),'Fiction')])[2]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at com.DemoWebShop.pages.DemoWebShopCartPage.compare_Product(DemoWebShopCartPage.java:22)
+	at com.DemoWebShop.tests.TC_SHOPPINGCART_010.testcase10(TC_SHOPPINGCART_010.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.TestNG.privateMain(TestNG.java:1385)
+	at org.testng.TestNG.main(TestNG.java:1354)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase10 -->
+        <test-method status="PASS" signature="logResults(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_010@629f0666]" name="logResults" is-config="true" duration-ms="178" started-at="2021-10-19T17:54:50Z" finished-at="2021-10-19T17:54:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase10 status=FAILURE method=TC_SHOPPINGCART_010.testcase10()[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_010@629f0666] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_SHOPPINGCART_010.testcase10()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logResults -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_010@629f0666]" name="closeApplication" is-config="true" duration-ms="733" started-at="2021-10-19T17:54:50Z" finished-at="2021-10-19T17:54:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.DemoWebShop.tests.TC_SHOPPINGCART_010 -->
+      <class name="com.DemoWebShop.tests.TC_SHOPPINGCART_013">
+        <test-method status="PASS" signature="initlizeExtentReportsObject()[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_013@47d384ee]" name="initlizeExtentReportsObject" is-config="true" duration-ms="379" started-at="2021-10-19T17:53:51Z" finished-at="2021-10-19T17:53:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initlizeExtentReportsObject -->
+        <test-method status="PASS" signature="initilizeDriver()[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_013@47d384ee]" name="initilizeDriver" is-config="true" duration-ms="3786" started-at="2021-10-19T17:53:51Z" finished-at="2021-10-19T17:53:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeDriver -->
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_013@47d384ee]" name="startTest" is-config="true" duration-ms="9002" started-at="2021-10-19T17:53:55Z" finished-at="2021-10-19T17:54:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_SHOPPINGCART_013.testCase13(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="testCase13(java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_013@47d384ee]" name="testCase13" duration-ms="1671" started-at="2021-10-19T17:54:04Z" data-provider="testData" finished-at="2021-10-19T17:54:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[computer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase13 -->
+        <test-method status="PASS" signature="logResults(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_013@47d384ee]" name="logResults" is-config="true" duration-ms="3" started-at="2021-10-19T17:54:06Z" finished-at="2021-10-19T17:54:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCase13 status=SUCCESS method=TC_SHOPPINGCART_013.testCase13(java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_013@47d384ee] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_SHOPPINGCART_013.testCase13(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logResults -->
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_013@47d384ee]" name="startTest" is-config="true" duration-ms="607" started-at="2021-10-19T17:54:06Z" finished-at="2021-10-19T17:54:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_SHOPPINGCART_013.testCase13(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="testCase13(java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_013@47d384ee]" name="testCase13" duration-ms="1323" started-at="2021-10-19T17:54:06Z" data-provider="testData" finished-at="2021-10-19T17:54:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[jewelry]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase13 -->
+        <test-method status="PASS" signature="logResults(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_013@47d384ee]" name="logResults" is-config="true" duration-ms="0" started-at="2021-10-19T17:54:08Z" finished-at="2021-10-19T17:54:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCase13 status=SUCCESS method=TC_SHOPPINGCART_013.testCase13(java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_013@47d384ee] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_SHOPPINGCART_013.testCase13(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logResults -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_013@47d384ee]" name="closeApplication" is-config="true" duration-ms="719" started-at="2021-10-19T17:54:08Z" finished-at="2021-10-19T17:54:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method status="PASS" signature="publishExtentReport()[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_013@47d384ee]" name="publishExtentReport" is-config="true" duration-ms="323" started-at="2021-10-19T17:56:48Z" finished-at="2021-10-19T17:56:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- publishExtentReport -->
+      </class> <!-- com.DemoWebShop.tests.TC_SHOPPINGCART_013 -->
+      <class name="com.DemoWebShop.tests.TC_SHOPPINGCART_014">
+        <test-method status="PASS" signature="initilizeDriver()[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_014@2d6a9952]" name="initilizeDriver" is-config="true" duration-ms="1555" started-at="2021-10-19T17:54:08Z" finished-at="2021-10-19T17:54:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeDriver -->
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_014@2d6a9952]" name="startTest" is-config="true" duration-ms="6894" started-at="2021-10-19T17:54:10Z" finished-at="2021-10-19T17:54:17Z">
           <params>
             <param index="0">
               <value>
@@ -26,15 +2331,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="testcase14()[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_014@c038203]" name="testcase14" duration-ms="5610" started-at="2021-10-19T10:12:56Z" finished-at="2021-10-19T10:13:01Z">
+        <test-method status="PASS" signature="testcase14()[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_014@2d6a9952]" name="testcase14" duration-ms="2540" started-at="2021-10-19T17:54:17Z" finished-at="2021-10-19T17:54:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcase14 -->
-        <test-method status="PASS" signature="logResults(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_014@c038203]" name="logResults" is-config="true" duration-ms="3" started-at="2021-10-19T10:13:01Z" finished-at="2021-10-19T10:13:01Z">
+        <test-method status="PASS" signature="logResults(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_014@2d6a9952]" name="logResults" is-config="true" duration-ms="1" started-at="2021-10-19T17:54:19Z" finished-at="2021-10-19T17:54:19Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testcase14 status=SUCCESS method=TC_SHOPPINGCART_014.testcase14()[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_014@c038203] output={null}]]]>
+                <![CDATA[[TestResult name=testcase14 status=SUCCESS method=TC_SHOPPINGCART_014.testcase14()[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_014@2d6a9952] output={null}]]]>
               </value>
             </param>
             <param index="1">
@@ -46,15 +2351,138 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logResults -->
-        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_014@c038203]" name="closeApplication" is-config="true" duration-ms="736" started-at="2021-10-19T10:13:01Z" finished-at="2021-10-19T10:13:02Z">
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_014@2d6a9952]" name="closeApplication" is-config="true" duration-ms="652" started-at="2021-10-19T17:54:19Z" finished-at="2021-10-19T17:54:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-        <test-method status="PASS" signature="publishExtentReport()[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_014@c038203]" name="publishExtentReport" is-config="true" duration-ms="395" started-at="2021-10-19T10:13:02Z" finished-at="2021-10-19T10:13:03Z">
+      </class> <!-- com.DemoWebShop.tests.TC_SHOPPINGCART_014 -->
+      <class name="com.DemoWebShop.tests.TC_SHOPPINGCART_011">
+        <test-method status="PASS" signature="initilizeDriver()[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_011@22a71081]" name="initilizeDriver" is-config="true" duration-ms="1520" started-at="2021-10-19T17:54:20Z" finished-at="2021-10-19T17:54:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- publishExtentReport -->
-      </class> <!-- com.DemoWebShop.tests.TC_SHOPPINGCART_014 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- initilizeDriver -->
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_011@22a71081]" name="startTest" is-config="true" duration-ms="6950" started-at="2021-10-19T17:54:22Z" finished-at="2021-10-19T17:54:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_SHOPPINGCART_011.testcase11(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="testcase11(java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_011@22a71081]" name="testcase11" duration-ms="4260" started-at="2021-10-19T17:54:29Z" data-provider="testData" finished-at="2021-10-19T17:54:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase11 -->
+        <test-method status="PASS" signature="logResults(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_011@22a71081]" name="logResults" is-config="true" duration-ms="2" started-at="2021-10-19T17:54:33Z" finished-at="2021-10-19T17:54:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase11 status=SUCCESS method=TC_SHOPPINGCART_011.testcase11(java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_011@22a71081] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_SHOPPINGCART_011.testcase11(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logResults -->
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_011@22a71081]" name="startTest" is-config="true" duration-ms="626" started-at="2021-10-19T17:54:33Z" finished-at="2021-10-19T17:54:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_SHOPPINGCART_011.testcase11(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="testcase11(java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_011@22a71081]" name="testcase11" duration-ms="3579" started-at="2021-10-19T17:54:34Z" data-provider="testData" finished-at="2021-10-19T17:54:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase11 -->
+        <test-method status="PASS" signature="logResults(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_011@22a71081]" name="logResults" is-config="true" duration-ms="2" started-at="2021-10-19T17:54:37Z" finished-at="2021-10-19T17:54:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase11 status=SUCCESS method=TC_SHOPPINGCART_011.testcase11(java.lang.String)[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_011@22a71081] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_SHOPPINGCART_011.testcase11(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logResults -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_011@22a71081]" name="closeApplication" is-config="true" duration-ms="650" started-at="2021-10-19T17:54:37Z" finished-at="2021-10-19T17:54:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.DemoWebShop.tests.TC_SHOPPINGCART_011 -->
+      <class name="com.DemoWebShop.tests.TC_SHOPPINGCART_012">
+        <test-method status="PASS" signature="initilizeDriver()[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_012@3930015a]" name="initilizeDriver" is-config="true" duration-ms="1574" started-at="2021-10-19T17:54:38Z" finished-at="2021-10-19T17:54:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeDriver -->
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_012@3930015a]" name="startTest" is-config="true" duration-ms="2755" started-at="2021-10-19T17:54:39Z" finished-at="2021-10-19T17:54:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_SHOPPINGCART_012.testcase12()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="testcase12()[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_012@3930015a]" name="testcase12" duration-ms="645" started-at="2021-10-19T17:54:42Z" finished-at="2021-10-19T17:54:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase12 -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_012@3930015a]" name="closeApplication" is-config="true" duration-ms="730" started-at="2021-10-19T17:54:43Z" finished-at="2021-10-19T17:54:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method status="PASS" signature="logResults(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_012@3930015a]" name="logResults" is-config="true" duration-ms="0" started-at="2021-10-19T17:54:43Z" finished-at="2021-10-19T17:54:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase12 status=SUCCESS method=TC_SHOPPINGCART_012.testcase12()[pri:0, instance:com.DemoWebShop.tests.TC_SHOPPINGCART_012@3930015a] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.DemoWebShop.tests.TC_SHOPPINGCART_012.testcase12()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logResults -->
+      </class> <!-- com.DemoWebShop.tests.TC_SHOPPINGCART_012 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -9,21 +9,22 @@ import com.selenium.framework.FrameworkUtility;
 
 public class GoogleSearchPage extends FrameworkUtility{
 	
-	public GoogleSearchPage(WebDriver driver) {
-		// TODO Auto-generated constructor stub
-		PageFactory.initElements(driver, this);
-	}
-	
-	@FindBy(name="q")
-	WebElement Search_Text_Field;
-	public void enter_value_to_search(String Value){
-		enterText(Search_Text_Field, Value);
-	}
-	
-	@FindBy(xpath="(//input[@name='btnK'])[1]")
-	WebElement Search_Button;
-	public void click_Search(){
-		clickElement(Search_Button);
-	}
+	 public GoogleSearchPage(WebDriver driver) {
+			PageFactory.initElements(driver, this);
+			}
+	 
+	 @FindBy(xpath="//input[@name='q']")
+	 WebElement Search_text;
+	 
+	 public void Enter_search_text(String value) {
+		 enterText(Search_text,value);
+	 }
+	 
+	 @FindBy(xpath="(//input[@name='btnK'])")
+	 WebElement click_search;
+	 
+	 public void click_Search_Button() {
+	 clickElement(click_search);
+	 }
 
 }

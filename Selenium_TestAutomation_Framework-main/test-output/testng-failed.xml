@@ -1,19 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test">
     <classes>
-      <class name="com.DemoWebShop.tests.TC_SHOPPINGCART_014">
+      <class name="com.DemoWebShop.tests.TC_SHOPPINGCART_013"/>
+      <class name="com.DemoWebShop.tests.TC_SHOPPINGCART_014"/>
+      <class name="com.DemoWebShop.tests.TC_SHOPPINGCART_011"/>
+      <class name="com.DemoWebShop.tests.TC_SHOPPINGCART_012"/>
+      <class name="com.DemoWebShop.tests.TC_SHOPPINGCART_010"/>
+      <class name="com.DemoWebShop.tests.TC_REGISTER_003"/>
+      <class name="com.DemoWebShop.tests.TC_REGISTER_004"/>
+      <class name="com.DemoWebShop.tests.TC_REGISTER_001"/>
+      <class name="com.DemoWebShop.tests.TC_LOGIN_009"/>
+      <class name="com.DemoWebShop.tests.TC_REGISTER_002"/>
+      <class name="com.DemoWebShop.tests.TC_LOGIN_007"/>
+      <class name="com.DemoWebShop.tests.TC_LOGIN_008"/>
+      <class name="com.DemoWebShop.tests.TC_LOGIN_005"/>
+      <class name="com.DemoWebShop.tests.TC_LOGIN_006"/>
+      <class name="com.DemoWebShop.tests.GoogleSearch"/>
+      <class name="com.DemoWebShop.tests.GoogleSearchTC"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.DemoWebShop.tests.TC_SHOPPINGCART_010">
         <methods>
-          <include name="testcase14"/>
           <include name="closeApplication"/>
           <include name="initilizeDriver"/>
-          <include name="publishExtentReport"/>
-          <include name="initlizeExtentReportsObject"/>
+          <include name="testcase10"/>
+          <include name="startTest"/>
+          <include name="logResults"/>
+        </methods>
+      </class> <!-- com.DemoWebShop.tests.TC_SHOPPINGCART_010 -->
+      <class name="com.DemoWebShop.tests.TC_SHOPPINGCART_012">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="initilizeDriver"/>
+          <include name="startTest"/>
+          <include name="logResults"/>
+        </methods>
+      </class> <!-- com.DemoWebShop.tests.TC_SHOPPINGCART_012 -->
+      <class name="com.DemoWebShop.tests.TC_REGISTER_001">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="initilizeDriver"/>
+          <include name="startTest"/>
+          <include name="logResults"/>
+        </methods>
+      </class> <!-- com.DemoWebShop.tests.TC_REGISTER_001 -->
+      <class name="com.DemoWebShop.tests.GoogleSearchTC">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="initilizeDriver"/>
+          <include name="TC01"/>
+        </methods>
+      </class> <!-- com.DemoWebShop.tests.GoogleSearchTC -->
+      <class name="com.DemoWebShop.tests.GoogleSearch">
+        <methods>
+          <include name="TC01"/>
+          <include name="closeApplication"/>
+          <include name="initilizeDriver"/>
+        </methods>
+      </class> <!-- com.DemoWebShop.tests.GoogleSearch -->
+      <class name="com.DemoWebShop.tests.TC_SHOPPINGCART_014">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="initilizeDriver"/>
           <include name="startTest"/>
           <include name="logResults"/>
         </methods>
       </class> <!-- com.DemoWebShop.tests.TC_SHOPPINGCART_014 -->
+      <class name="com.DemoWebShop.tests.TC_SHOPPINGCART_013">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="publishExtentReport"/>
+          <include name="initilizeDriver"/>
+          <include name="startTest"/>
+          <include name="initlizeExtentReportsObject"/>
+          <include name="logResults"/>
+        </methods>
+      </class> <!-- com.DemoWebShop.tests.TC_SHOPPINGCART_013 -->
+      <class name="com.DemoWebShop.tests.TC_LOGIN_006">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="initilizeDriver"/>
+          <include name="startTest"/>
+          <include name="testCase6" invocation-numbers="0 1 2"/>
+          <include name="logResults"/>
+        </methods>
+      </class> <!-- com.DemoWebShop.tests.TC_LOGIN_006 -->
+      <class name="com.DemoWebShop.tests.TC_REGISTER_002">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="initilizeDriver"/>
+          <include name="startTest"/>
+          <include name="logResults"/>
+        </methods>
+      </class> <!-- com.DemoWebShop.tests.TC_REGISTER_002 -->
+      <class name="com.DemoWebShop.tests.TC_LOGIN_008">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="initilizeDriver"/>
+          <include name="startTest"/>
+          <include name="testCase8" invocation-numbers="0 1 2"/>
+          <include name="logResults"/>
+        </methods>
+      </class> <!-- com.DemoWebShop.tests.TC_LOGIN_008 -->
+      <class name="com.DemoWebShop.tests.TC_LOGIN_009">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="initilizeDriver"/>
+          <include name="startTest"/>
+          <include name="testCase9" invocation-numbers="0 1 2"/>
+          <include name="logResults"/>
+        </methods>
+      </class> <!-- com.DemoWebShop.tests.TC_LOGIN_009 -->
+      <class name="com.DemoWebShop.tests.TC_REGISTER_003">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="initilizeDriver"/>
+          <include name="startTest"/>
+          <include name="testcase3" invocation-numbers="0 1"/>
+          <include name="logResults"/>
+        </methods>
+      </class> <!-- com.DemoWebShop.tests.TC_REGISTER_003 -->
+      <class name="com.DemoWebShop.tests.TC_LOGIN_005">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="testcase5" invocation-numbers="0 1 2"/>
+          <include name="initilizeDriver"/>
+          <include name="startTest"/>
+          <include name="logResults"/>
+        </methods>
+      </class> <!-- com.DemoWebShop.tests.TC_LOGIN_005 -->
+      <class name="com.DemoWebShop.tests.TC_SHOPPINGCART_011">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="initilizeDriver"/>
+          <include name="startTest"/>
+          <include name="logResults"/>
+        </methods>
+      </class> <!-- com.DemoWebShop.tests.TC_SHOPPINGCART_011 -->
+      <class name="com.DemoWebShop.tests.TC_LOGIN_007">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="initilizeDriver"/>
+          <include name="startTest"/>
+          <include name="logResults"/>
+        </methods>
+      </class> <!-- com.DemoWebShop.tests.TC_LOGIN_007 -->
+      <class name="com.DemoWebShop.tests.TC_REGISTER_004">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="initilizeDriver"/>
+          <include name="startTest"/>
+          <include name="logResults"/>
+        </methods>
+      </class> <!-- com.DemoWebShop.tests.TC_REGISTER_004 -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
